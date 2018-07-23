@@ -1,0 +1,34 @@
+{
+  "name": "intrepid-highres-timer",
+  "author": "Erich Kuba",
+  "description": "Intrepid High Resolution Timer Componentry and Helpers",
+  "license": "© 2018 Erich Kuba. All rights reserved. Use of this code is prohibited without written authorization from the author.",
+  "version": "0.0.2",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "automock": false,
+    "collectCoverage": true,
+    "roots": [
+      "<rootDir>/tests/"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erichkuba/intrepid-highres-timer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erichkuba/intrepid-highres-timer/issues"
+  },
+  "homepage": "https://github.com/erichkuba/intrepid-highres-timer#readme"
+}
