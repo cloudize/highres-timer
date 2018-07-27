@@ -6,5 +6,8 @@ cicd
 .npmrc
 .npmignore
 
+# Tests
+tests
+
 # Coverage Reports
 coverage
