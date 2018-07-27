@@ -1,0 +1,10 @@
+# Ignore the CICD folder and it's contents
+cicd
+
+# Ignore files
+.gitignore
+.npmrc
+.npmignore
+
+# Coverage Reports
+coverage

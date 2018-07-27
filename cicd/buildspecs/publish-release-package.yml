@@ -1,0 +1,22 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+    - aws s3 cp s3://us-east-1.artifacts.safeto.fail/NPM-CICD-Token/.npmrc .
+    - echo Installing NPM modules...
+    - npm install
+  pre_build:
+    commands:
+    - echo Updating package.json version
+    - node cicd/scripts/prepareReleaseVersion.js
+  build:
+    commands:
+    - echo Publishing the NPM Package
+    - npm publish
+  post_build:
+    commands:
+    - echo Publishing the NPM Package completed at `date`
+artifacts:
+  files:
+  - '**/*'
