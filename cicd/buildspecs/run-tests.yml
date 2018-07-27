@@ -4,6 +4,7 @@ phases:
   install:
     commands:
     - echo Installing NPM modules...
+    - aws s3 cp s3://us-east-1.artifacts.safeto.fail/NPM-CICD-Token/.npmrc .
     - npm install
   pre_build:
     commands:
