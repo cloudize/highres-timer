@@ -3,7 +3,7 @@
   "author": "Erich Kuba",
   "description": "Intrepid High Resolution Timer Componentry and Helpers",
   "license": "© 2018 Erich Kuba. All rights reserved. Use of this code is prohibited without written authorization from the author.",
-  "version": "1.0.2-1",
+  "version": "1.0.2-2",
   "main": "index.js",
   "scripts": {
     "test": "jest"
