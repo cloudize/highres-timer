@@ -60,6 +60,9 @@ typings/
 # next.js build output
 .next
 
+# NPM Tokens
+.npmrc
+
 # Webstorm config and coverage files
 .idea
 coverage
