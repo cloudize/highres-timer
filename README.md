@@ -1,2 +1,2 @@
-# intrepid-highres-timer
-Intrepid High Resolution Timer Componentry
+# apicore-highres-timer
+APICore High Resolution Timer Componentry
