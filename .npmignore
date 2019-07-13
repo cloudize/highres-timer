@@ -11,3 +11,6 @@ tests
 
 # Coverage Reports
 coverage
+
+# Webstorm Configs
+.idea
