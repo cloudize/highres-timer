@@ -3,7 +3,7 @@
   "author": "Erich Kuba",
   "description": "APICore High Resolution Timer Componentry and Helpers",
   "license": "UNLICENSED",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -20,7 +20,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "jest": "^22.4.3"
+    "jest": "^24.9.0"
   },
   "repository": {
     "type": "git",
