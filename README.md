@@ -1,2 +1,2 @@
-# apicore-highres-timer
-APICore High Resolution Timer Componentry
+# apigames-highres-timer
+API Games High Resolution Timer Componentry

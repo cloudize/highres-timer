@@ -1,7 +1,7 @@
 {
-  "name": "@apicore/highres-timer",
+  "name": "@apigames/highres-timer",
   "author": "Erich Kuba",
-  "description": "APICore High Resolution Timer Componentry and Helpers",
+  "description": "API Games High Resolution Timer Componentry and Helpers",
   "license": "UNLICENSED",
   "version": "1.0.2",
   "main": "index.js",
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erichkuba/apicore-highres-timer.git"
+    "url": "git+https://github.com/erichkuba/apigames-highres-timer.git"
   },
   "bugs": {
-    "url": "https://github.com/erichkuba/apicore-highres-timer/issues"
+    "url": "https://github.com/erichkuba/apigames-highres-timer/issues"
   },
-  "homepage": "https://github.com/erichkuba/apicore-highres-timer#readme"
+  "homepage": "https://github.com/erichkuba/apigames-highres-timer#readme"
 }
