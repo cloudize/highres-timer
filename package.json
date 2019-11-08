@@ -11,6 +11,11 @@
   "jest": {
     "automock": false,
     "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/WebStorm/**"
+    ],
     "roots": [
       "<rootDir>/tests/"
     ],
