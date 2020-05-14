@@ -1,9 +1,9 @@
 {
   "name": "@apigames/highres-timer",
-  "author": "Erich Kuba",
+  "author": "API Games Limited",
   "description": "API Games High Resolution Timer Componentry and Helpers",
   "license": "UNLICENSED",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -25,7 +25,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "jest": "^25.2.6"
+    "jest": "^25.5.4"
   },
   "repository": {
     "type": "git",
