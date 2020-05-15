@@ -3,7 +3,7 @@
   "author": "API Games Limited",
   "description": "API Games High Resolution Timer Componentry and Helpers",
   "license": "UNLICENSED",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -25,7 +25,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "jest": "^25.5.4"
+    "jest": "^26.0.1"
   },
   "repository": {
     "type": "git",
