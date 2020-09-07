@@ -6,6 +6,11 @@ cicd
 .npmrc
 .npmignore
 
+# Config Files
+.eslintrc
+jest.config.js
+tsconfig.json
+
 # Tests
 tests
 
@@ -14,3 +19,7 @@ coverage
 
 # Webstorm Configs
 .idea
+
+# Build Source Files
+src
+tests
