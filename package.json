@@ -1,38 +1,32 @@
 {
   "name": "@apigames/highres-timer",
   "author": "API Games Limited",
-  "description": "API Games High Resolution Timer Componentry and Helpers",
-  "license": "UNLICENSED",
+  "description": "API Games High Resolution Timer",
+  "license": "MIT",
   "version": "1.0.6",
-  "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
-  },
-  "jest": {
-    "automock": false,
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "**/*.js",
-      "!**/node_modules/**",
-      "!**/WebStorm/**"
-    ],
-    "roots": [
-      "<rootDir>/tests/"
-    ],
-    "modulePaths": [
-      "<rootDir>"
-    ]
   },
   "dependencies": {},
   "devDependencies": {
-    "jest": "^26.0.1"
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.6.4",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "babel-jest": "^26.3.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erichkuba/apigames-highres-timer.git"
+    "url": "git+https://github.com/apigames-public/highres-timer"
   },
   "bugs": {
-    "url": "https://github.com/erichkuba/apigames-highres-timer/issues"
+    "url": "https://github.com/apigames-public/highres-timer/issues"
   },
-  "homepage": "https://github.com/erichkuba/apigames-highres-timer#readme"
+  "homepage": "https://github.com/apigames-public/highres-timer#readme"
 }
