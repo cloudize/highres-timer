@@ -3,10 +3,10 @@
   "author": "API Games Limited",
   "description": "API Games High Resolution Timer",
   "license": "MIT",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {},
   "devDependencies": {
