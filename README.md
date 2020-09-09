@@ -18,7 +18,7 @@ This package provides a basic high resolution timer for the API Games Platform a
 
   const startTime: HighresTimeType = startTime();
   doSomethingThatTakesTime();
-  const elapsedTime = elapsedTime(startTime);
+  const elapsedTimeMS: number = elapsedTime(startTime);
 
 ```
 
@@ -28,7 +28,7 @@ This package provides a basic high resolution timer for the API Games Platform a
 
   const startTime = startTime();
   doSomethingThatTakesTime();
-  const elapsedTime = elapsedTime(startTime);
+  const elapsedTimeMS = elapsedTime(startTime);
 
 ```
 
