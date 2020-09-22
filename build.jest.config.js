@@ -1,11 +1,4 @@
 module.exports = {
-  coverageDirectory: './coverage',
-  collectCoverageFrom: [
-    '**/src/**/*.[jt]s?(x)',
-    '!**/lib/**',
-    '!**/tests/unit/**',
-    '!**/node_modules/**',
-  ],
   modulePaths: ['<rootDir>/src'],
   moduleFileExtensions: [
     'js',
@@ -13,7 +6,7 @@ module.exports = {
   ],
   testEnvironment: 'node',
   testMatch: [
-    '**/tests/dev/**/*.test.ts',
+    '**/tests/build/**/*.test.(j|t)s',
   ],
   testPathIgnorePatterns: [
     '/node_modules/',

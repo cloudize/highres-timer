@@ -1,4 +1,4 @@
-import { startTime, elapsedTime, HighresTimeType } from '../src/index';
+import { startTime, elapsedTime, HighresTimeType } from '../../../lib';
 
 const allowedVariationMS = 2;
 

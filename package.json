@@ -3,10 +3,13 @@
   "author": "API Games Limited",
   "description": "API Games High Resolution Timer",
   "license": "MIT",
-  "version": "1.0.9",
+  "version": "1.0.10",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "jest --coverage"
+    "build": "rmdir /s /q lib & tsc & jest --config build.jest.config.js",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {},
   "devDependencies": {
