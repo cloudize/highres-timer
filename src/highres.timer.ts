@@ -1,26 +1,29 @@
+/* eslint-disable no-undef */
+import { isFalse, isUndefined } from '@apigames/json';
+
 export type HighresTimeType = [ number, number ];
 
-const _perfomancePolyfill = () =>{
+// eslint-disable-next-line no-underscore-dangle
+const _perfomancePolyfill = () => {
   // based on https://gist.github.com/paulirish/5438650 copyright Paul Irish 2015
-  if ("performance" in window === false) {
+  if (isFalse('performance' in window)) {
     (window.performance as any) = {};
   }
 
-  Date.now = (Date.now || (() => {  // thanks IE8
-    return new Date().getTime();
-  }));
+  Date.now = (Date.now || (() => new Date().getTime()));
 
-  if ("now" in window.performance === false){
+  if (isFalse('now' in window.performance)) {
     let nowOffset = Date.now();
 
-    if (performance.timing && performance.timing.navigationStart){
-      nowOffset = performance.timing.navigationStart
+    if (performance.timing && performance.timing.navigationStart) {
+      nowOffset = performance.timing.navigationStart;
     }
 
     window.performance.now = () => Date.now() - nowOffset;
   }
-}
+};
 
+// eslint-disable-next-line no-underscore-dangle
 const _hrtime = (previousTimestamp?: HighresTimeType): HighresTimeType => {
   _perfomancePolyfill();
   const baseNow = Math.floor((Date.now() - performance.now()) * 1e-3);
@@ -29,9 +32,10 @@ const _hrtime = (previousTimestamp?: HighresTimeType): HighresTimeType => {
   let nanoseconds = Math.floor((clocktime % 1) * 1e9);
 
   if (previousTimestamp) {
-    seconds = seconds - previousTimestamp[0];
-    nanoseconds = nanoseconds - previousTimestamp[1];
+    seconds -= previousTimestamp[0];
+    nanoseconds -= previousTimestamp[1];
     if (nanoseconds < 0) {
+      // eslint-disable-next-line no-plusplus
       seconds--;
       nanoseconds += 1e9;
     }
@@ -46,8 +50,8 @@ _hrtime.bigint = (time?: [number, number]): bigint => {
   return ((diff[0] * NS_PER_SEC + diff[1]) as unknown) as bigint;
 };
 
-if ((typeof process === 'undefined' || typeof process.hrtime === 'undefined') && typeof window.process === 'undefined') {
+if ((isUndefined(typeof process) || isUndefined(typeof process.hrtime)) && isUndefined(typeof window.process)) {
   window.process = ({} as any);
 }
 
-export default typeof process.hrtime === 'undefined' ? (window.process.hrtime = _hrtime) : process.hrtime;
+export default isUndefined(typeof process.hrtime) ? (window.process.hrtime = _hrtime) : process.hrtime;
