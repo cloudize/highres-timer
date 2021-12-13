@@ -2,33 +2,33 @@ import { startTime, elapsedTime, HighresTimeType } from '../../../lib';
 
 const allowedVariationMS = 2;
 
-describe("The High Resolution Timer Utils", () => {
-    describe("startTime() method", () => {
-        it("should return an array with two numbers", () => {
-            const _startTime: HighresTimeType = startTime();
-            expect(Array.isArray(_startTime)).toBe(true);
-            expect(_startTime.length).toBe(2);
-            expect(_startTime[0]).not.toBeNaN();
-            expect(_startTime[1]).not.toBeNaN();
-        });
+describe('The High Resolution Timer Utils', () => {
+  describe('startTime() method', () => {
+    it('should return an array with two numbers', () => {
+      const testStartTime: HighresTimeType = startTime();
+      expect(Array.isArray(testStartTime)).toBe(true);
+      expect(testStartTime.length).toBe(2);
+      expect(testStartTime[0]).not.toBeNaN();
+      expect(testStartTime[1]).not.toBeNaN();
+    });
+  });
+
+  describe('elapsedTime() method', () => {
+    it('should return an value when called with a valid start time', () => {
+      const testStartTime: HighresTimeType = startTime();
+      const testDuration = elapsedTime(testStartTime);
+      expect(testDuration).not.toBeNaN();
+      expect(testDuration).toBeGreaterThan(0);
+      expect(testDuration).toBeLessThan(allowedVariationMS);
     });
 
-    describe("elapsedTime() method", () => {
-        it("should return an value when called with a valid start time", () => {
-            const _startTime: HighresTimeType = startTime();
-            const _duration = elapsedTime(_startTime);
-            expect(_duration).not.toBeNaN();
-            expect(_duration).toBeGreaterThan(0);
-            expect(_duration).toBeLessThan(allowedVariationMS);
-        });
-
-        it("should return an value when called with a valid start time", () => {
-            const _startTime: HighresTimeType = startTime();
-            _startTime[0] -= 1;
-            const _duration = elapsedTime(_startTime);
-            expect(_duration).not.toBeNaN();
-            expect(_duration).toBeGreaterThan(1000);
-            expect(_duration).toBeLessThan(1000 + allowedVariationMS);
-        });
+    it('should return an value when called with a valid start time that has been reduced by 1 second', () => {
+      const testStartTime: HighresTimeType = startTime();
+      testStartTime[0] -= 1;
+      const testDuration = elapsedTime(testStartTime);
+      expect(testDuration).not.toBeNaN();
+      expect(testDuration).toBeGreaterThan(1000);
+      expect(testDuration).toBeLessThan(1000 + allowedVariationMS);
     });
+  });
 });
