@@ -1,6 +1,6 @@
 import { startTime, elapsedTime, HighresTimeType } from '../../src';
 
-const allowedVariationMS = 2;
+const allowedTestVariationMS = 2;
 
 describe('The High Resolution Timer Utils', () => {
   describe('startTime() method', () => {
@@ -19,7 +19,7 @@ describe('The High Resolution Timer Utils', () => {
       const testDuration = elapsedTime(testStartTime);
       expect(testDuration).not.toBeNaN();
       expect(testDuration).toBeGreaterThan(0);
-      expect(testDuration).toBeLessThan(allowedVariationMS);
+      expect(testDuration).toBeLessThan(allowedTestVariationMS);
     });
 
     it('should return an value when called with a valid start time that has been reduced by 1 second', () => {
@@ -28,7 +28,7 @@ describe('The High Resolution Timer Utils', () => {
       const testDuration = elapsedTime(testStartTime);
       expect(testDuration).not.toBeNaN();
       expect(testDuration).toBeGreaterThan(1000);
-      expect(testDuration).toBeLessThan(1000 + allowedVariationMS);
+      expect(testDuration).toBeLessThan(1000 + allowedTestVariationMS);
     });
   });
 });

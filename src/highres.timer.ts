@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { isFalse, isUndefined } from '@apigames/json';
+import { isDefined, isFalse, isUndefined } from '@apigames/json';
 
 export type HighresTimeType = [ number, number ];
 
@@ -50,8 +50,8 @@ _hrtime.bigint = (time?: [number, number]): bigint => {
   return ((diff[0] * NS_PER_SEC + diff[1]) as unknown) as bigint;
 };
 
-if ((isUndefined(typeof process) || isUndefined(typeof process.hrtime)) && isUndefined(typeof window.process)) {
+if ((isUndefined(typeof process) || isUndefined(process.hrtime)) && isUndefined(window.process)) {
   window.process = ({} as any);
 }
 
-export default isUndefined(typeof process.hrtime) ? (window.process.hrtime = _hrtime) : process.hrtime;
+export default isDefined(process.hrtime) ? process.hrtime : (window.process.hrtime = _hrtime);
