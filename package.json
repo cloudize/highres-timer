@@ -3,7 +3,7 @@
   "author": "API Games Limited",
   "description": "API Games High Resolution Timer",
   "license": "MIT",
-  "version": "22.1.0-dev.9",
+  "version": "22.1.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -23,7 +23,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@apigames/json": "22.1.0-dev.9"
+    "@apigames/json": "22.1.0"
   },
   "devDependencies": {
     "@types/jest": "27.4.0",
