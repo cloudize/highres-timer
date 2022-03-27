@@ -1,8 +1,8 @@
 # API Games High Resolution Timer
 
 ![](https://img.shields.io/badge/build-passing-brightgreen)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/44d12a9566524e54b859fb489df3e3ad)](https://www.codacy.com/gh/apigames-public/highres-timer/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=apigames-public/highres-timer&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/44d12a9566524e54b859fb489df3e3ad)](https://www.codacy.com/gh/apigames-public/highres-timer/dashboard?utm_source=github.com&utm_medium=referral&utm_content=apigames-public/highres-timer&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5ad0506135cd47169d6f7f3b8b0594e8)](https://www.codacy.com/gh/apigames-core/highres-timer/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=apigames-core/highres-timer&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/5ad0506135cd47169d6f7f3b8b0594e8)](https://www.codacy.com/gh/apigames-core/highres-timer/dashboard?utm_source=github.com&utm_medium=referral&utm_content=apigames-core/highres-timer&utm_campaign=Badge_Coverage)
 ![](https://img.shields.io/npm/v/@apigames/highres-timer)
 ![](https://img.shields.io/badge/license-MIT-blue)
 
