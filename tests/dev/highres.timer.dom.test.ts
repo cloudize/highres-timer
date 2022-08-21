@@ -1,4 +1,4 @@
-import { extractAndRedact } from '@apigames/json';
+import { extractAndRedact } from '@cloudize/json';
 
 const allowedTestVariationMS = 2;
 
