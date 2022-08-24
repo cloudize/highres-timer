@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { isDefined, isFalse, isUndefined } from '@apigames/json';
+import { isDefined, isFalse, isUndefined } from '@cloudize/json';
 
 export type HighresTimeType = [ number, number ];
 

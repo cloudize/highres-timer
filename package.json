@@ -1,5 +1,5 @@
 {
-  "name": "@apigames/highres-timer",
+  "name": "@cloudize/highres-timer",
   "author": {
     "name" : "API Games Limited",
     "email" : "hello@api.games",
@@ -11,7 +11,7 @@
       "email" : "erich.kuba@api.games"
     }
   ],
-  "description": "API Games High Resolution Timer",
+  "description": "Cloudize High Resolution Timer",
   "license": "MIT",
   "version": "22.1.11",
   "main": "lib/index.js",
@@ -33,7 +33,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@apigames/json": "22.1.12"
+    "@cloudize/json": "22.1.12"
   },
   "devDependencies": {
     "@types/jest": "28.1.7",
@@ -53,10 +53,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apigames-core/highres-timer"
+    "url": "git+https://github.com/cloudize/highres-timer"
   },
   "bugs": {
-    "url": "https://github.com/apigames-core/highres-timer/issues"
+    "url": "https://github.com/cloudize/highres-timer/issues"
   },
-  "homepage": "https://github.com/apigames-core/highres-timer#readme"
+  "homepage": "https://github.com/cloudize/highres-timer#readme"
 }
