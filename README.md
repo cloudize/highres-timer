@@ -43,9 +43,10 @@ This package provides a basic high resolution timer for the API Games Platform a
 $ npm i @apigames/highres-timer 
 ```
 
+
 ## Authors or Acknowledgments
 
-*   API Games Limited
+*   Cloudize Limited
 *   Vlad Tansky
 
 ## License
