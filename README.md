@@ -45,7 +45,7 @@ $ npm i @cloudize/highres-timer
 
 ## Authors or Acknowledgments
 
-*   API Games Limited
+*   Cloudize Limited
 *   Vlad Tansky
 
 ## License
