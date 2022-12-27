@@ -22,7 +22,7 @@ module.exports = {
         '/node_modules/',
       ],
       transform: {
-        '\\.ts$': ['ts-jest'],
+        '\\.ts$': 'ts-jest',
       },
     },
     {
@@ -47,7 +47,7 @@ module.exports = {
         '/node_modules/',
       ],
       transform: {
-        '\\.ts$': ['ts-jest'],
+        '\\.ts$': 'ts-jest',
       },
     },
   ],
