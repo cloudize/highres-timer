@@ -1,5 +1,5 @@
-/* eslint-disable no-undef */
-import { isDefined, isFalse, isUndefined } from '@cloudize/json';
+import { isFalse } from '@cloudize/json/lib/boolean';
+import { isDefined, isUndefined } from '@cloudize/json/lib/common';
 
 export type HighresTimeType = [ number, number ];
 
