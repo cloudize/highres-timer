@@ -1,5 +1,5 @@
-/* eslint-disable no-undef */
-import { isDefined, isFalse, isUndefined } from '@apigames/json';
+import { isFalse } from '@apigames/json/lib/boolean';
+import { isDefined, isUndefined } from '@apigames/json/lib/common';
 
 export type HighresTimeType = [ number, number ];
 
