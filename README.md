@@ -46,7 +46,6 @@ $ npm i @cloudize/highres-timer
 ## Authors or Acknowledgments
 
 *   Cloudize Limited
-*   Vlad Tansky
 
 ## License
 

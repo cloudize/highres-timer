@@ -1,6 +1,6 @@
 import highresTimer, { HighresTimeType } from './highres.timer';
 
-export { HighresTimeType } from './highres.timer';
+export { type HighresTimeType } from './highres.timer';
 
 export function startTime(): HighresTimeType {
   return highresTimer();

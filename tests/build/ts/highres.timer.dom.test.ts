@@ -6,6 +6,8 @@ describe('The High Resolution Timer Utils', () => {
   describe('startTime() method', () => {
     it('should return an array with two numbers', () => {
       extractAndRedact(process, 'hrtime');
+
+      // eslint-disable-next-line global-require
       const { startTime } = require('../../../lib');
 
       const testStartTime = startTime();
@@ -19,6 +21,8 @@ describe('The High Resolution Timer Utils', () => {
   describe('elapsedTime() method', () => {
     it('should return an value when called with a valid start time', () => {
       extractAndRedact(process, 'hrtime');
+
+      // eslint-disable-next-line global-require
       const { startTime, elapsedTime } = require('../../../lib');
 
       const testStartTime = startTime();
@@ -30,6 +34,8 @@ describe('The High Resolution Timer Utils', () => {
 
     it('should return an value when called with a valid start time that has been reduced by 1 second', () => {
       extractAndRedact(process, 'hrtime');
+
+      // eslint-disable-next-line global-require
       const { startTime, elapsedTime } = require('../../../lib');
 
       const testStartTime = startTime();

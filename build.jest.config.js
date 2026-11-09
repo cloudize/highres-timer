@@ -4,10 +4,8 @@ module.exports = {
       displayName: 'jsdom',
       coverageDirectory: './coverage',
       collectCoverageFrom: [
-        '**/src/**/*.[jt]s?(x)',
-        '!**/lib/**',
-        '!**/tests/build/**',
-        '!**/node_modules/**',
+        '<rootDir>/src/**/*.{ts,js}',
+        '!<rootDir>/src/**/*.d.ts',
       ],
       modulePaths: ['<rootDir>/src'],
       moduleFileExtensions: [
@@ -22,17 +20,20 @@ module.exports = {
         '/node_modules/',
       ],
       transform: {
-        '\\.ts$': ['ts-jest'],
+        '^.+\\.ts$': [
+          'ts-jest',
+          {
+            tsconfig: '<rootDir>/tsconfig.jest.json',
+          },
+        ],
       },
     },
     {
       displayName: 'node',
       coverageDirectory: './coverage',
       collectCoverageFrom: [
-        '**/src/**/*.[jt]s?(x)',
-        '!**/lib/**',
-        '!**/tests/build/**',
-        '!**/node_modules/**',
+        '<rootDir>/src/**/*.{ts,js}',
+        '!<rootDir>/src/**/*.d.ts',
       ],
       modulePaths: ['<rootDir>/src'],
       moduleFileExtensions: [
@@ -47,7 +48,12 @@ module.exports = {
         '/node_modules/',
       ],
       transform: {
-        '\\.ts$': ['ts-jest'],
+        '^.+\\.ts$': [
+          'ts-jest',
+          {
+            tsconfig: '<rootDir>/tsconfig.jest.json',
+          },
+        ],
       },
     },
   ],
